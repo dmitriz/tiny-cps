@@ -18,11 +18,13 @@
 Tiny but powerful goodies for Continuation-Passing-Style (CPS) functions
 
 # Migration notice
-The most advanced version of this package is migrating to https://www.npmjs.com/package/cpsfy
+The most advanced version of this package is migrating to 
+https://www.npmjs.com/package/cpsfy
+
 Please use `cpsfy` instead of `tiny-cps`
 
 ```sh
-// older package, will remain unchanged for now
+// older package, will remain unchanged
 npm install tiny-cps
 ```
 *No dependency policy.*
