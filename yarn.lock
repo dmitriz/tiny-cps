@@ -1968,6 +1968,20 @@ findit@^2.0.0:
   resolved "https://registry.yarnpkg.com/findit/-/findit-2.0.0.tgz#6509f0126af4c178551cfa99394e032e13a4d56e"
   integrity sha1-ZQnwEmr0wXhVHPqZOU4DLhOk1W4=
 
+flow-parser@^0.99.0:
+  version "0.99.0"
+  resolved "https://registry.yarnpkg.com/flow-parser/-/flow-parser-0.99.0.tgz#1fd3d1751b897a74c1f92c758688eb7f200237f0"
+  integrity sha512-6opkcL97qs5MhXqP9X/jym0lia6jsqyHpA+Z+6GlJv3bPOfmR45WACEwubJCXv0rMS1ryGF+E5ONzRpxzSoGZQ==
+
+flow-remove-types@^2.99.0:
+  version "2.99.0"
+  resolved "https://registry.yarnpkg.com/flow-remove-types/-/flow-remove-types-2.99.0.tgz#117725cb4b30a0bb9a421e84f8a3c4bc994c9bc6"
+  integrity sha512-xPkxMExWtX/qJ9HnWOTHHN5Aniv7tYPAzjPl70/sh6BPdD0TzufyDBzjp4gy+tKHyE/aWX8qHbnpsU1yb0iLDg==
+  dependencies:
+    flow-parser "^0.99.0"
+    pirates "^3.0.2"
+    vlq "^0.2.1"
+
 for-each@~0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/for-each/-/for-each-0.3.3.tgz#69b447e88a0a5d32c3e7084f3f1710034b21376e"
@@ -3420,6 +3434,11 @@ node-fetch@^2.2.0:
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.0.tgz#e633456386d4aa55863f676a7ab0daa8fdecb0fd"
   integrity sha512-8dG4H5ujfvFiqDmVu9fQ5bOHUC15JMjMY/Zumv26oOvvVJjM67KF8koCWIabKQ1GJIa9r2mMZscBq/TbdOcmNA==
 
+node-modules-regexp@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/node-modules-regexp/-/node-modules-regexp-1.0.0.tgz#8d9dbe28964a4ac5712e9131642107c71e90ec40"
+  integrity sha1-jZ2+KJZKSsVxLpExZCEHxx6Q7EA=
+
 node-pre-gyp@^0.12.0:
   version "0.12.0"
   resolved "https://registry.yarnpkg.com/node-pre-gyp/-/node-pre-gyp-0.12.0.tgz#39ba4bb1439da030295f899e3b520b7785766149"
@@ -3830,6 +3849,13 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/pinkie/-/pinkie-2.0.4.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   integrity sha1-clVrgM+g1IqXToDnckjoDtT3+HA=
+
+pirates@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/pirates/-/pirates-3.0.2.tgz#7e6f85413fd9161ab4e12b539b06010d85954bb9"
+  integrity sha512-c5CgUJq6H2k6MJz72Ak1F5sN9n9wlSlJyEnwvpm9/y3WB4E3pHBDT2c6PEiS1vyJvq2bUxUAIu0EGf8Cx4Ic7Q==
+  dependencies:
+    node-modules-regexp "^1.0.0"
 
 pkg-conf@^3.0.0:
   version "3.1.0"
@@ -4706,10 +4732,10 @@ tap-parser@^9.3.2:
   dependencies:
     yaml "^1.5.0"
 
-tap@14.1.11:
-  version "14.1.11"
-  resolved "https://registry.yarnpkg.com/tap/-/tap-14.1.11.tgz#8449772236aa02e6b3e54c113c685c219c3a5ca2"
-  integrity sha512-lz/nGffbk4M7RfKfK14QrXBSy8cYNKTMZXAgPFSThyDDwsy46VGlp+sEX6jHydQa2xe1Q/Ea3IWCrMI04JM4+A==
+tap@14.2.0:
+  version "14.2.0"
+  resolved "https://registry.yarnpkg.com/tap/-/tap-14.2.0.tgz#bab8d496595c64d29c4a73d27e0ab10d3cf9699d"
+  integrity sha512-uZN2HdkjMFxxLJqIwRO/I0Izw4nCIMQnEBRyVhpQAyo+XyclximeLleK1QHeMuKLMamJGhLDZ+IxJeZxwnl8Og==
   dependencies:
     async-hook-domain "^1.1.0"
     bind-obj-methods "^2.0.0"
@@ -4722,6 +4748,7 @@ tap@14.1.11:
     domain-browser "^1.2.0"
     esm "^3.2.25"
     findit "^2.0.0"
+    flow-remove-types "^2.99.0"
     foreground-child "^1.3.3"
     fs-exists-cached "^1.0.0"
     function-loop "^1.0.2"
@@ -5143,6 +5170,11 @@ verror@1.10.0:
     assert-plus "^1.0.0"
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
+
+vlq@^0.2.1:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/vlq/-/vlq-0.2.3.tgz#8f3e4328cf63b1540c0d67e1b2778386f8975b26"
+  integrity sha512-DRibZL6DsNhIgYQ+wNdWDL2SL3bKPlVrRiBqV5yuMm++op8W4kGFtaQfCs4KEJn0wBZcHVHJ3eoywX8983k1ow==
 
 wcwidth@^1.0.1:
   version "1.0.1"
