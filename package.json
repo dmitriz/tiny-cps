@@ -18,7 +18,7 @@
     "watch": "nyc ava test/*test.js -w",
     "tape": "tape test/*test.js",
     "tap": "tap test/*test.js",
-    "sync": "git ac && git pull --rebase && git push",
+    "sync": "git ac; git pull --rebase && git push",
     "cov": "nyc report --reporter=text-lcov | coveralls",
     "codecov": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "toc": "markdown-toc README.md > toc"
